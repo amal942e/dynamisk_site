@@ -7,3 +7,5 @@ function visBil(bil) {
     klon.querySelector("h2").textContent = bil.model;
     document.querySelector("main").appendChild(klon);
 }
+
+
