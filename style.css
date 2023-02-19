@@ -30,6 +30,9 @@ img {
 .kontinentbody {
   background-color: #beddf2;
 }
+.singlekontinentbody {
+  background-color: #4ea66f;
+}
 
 .logo {
   width: 70px;
@@ -38,7 +41,7 @@ img {
   margin-right: 20px;
 }
 .kontinentlogo {
-  width: 70px;
+  width: 80px;
 }
 .verden {
   width: 600px;
@@ -48,9 +51,21 @@ img {
 .indexheader {
   background-color: #f3ece1;
 }
-
+.headerlink a {
+  font-family: "maxular", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 20px;
+  color: #093d30;
+  display: flex;
+  justify-content: flex-end;
+}
 .kontinentheader {
   background-color: #4ea66f;
+}
+.singlekontinentheader {
+  background-color: #beddf2;
 }
 
 h2 {
@@ -69,7 +84,7 @@ h3 {
   margin-left: 20px;
   margin-right: 20px;
 }
-a {
+.category-list a {
   color: #fffedb;
   font-family: "maxular", serif;
   font-weight: 300;
@@ -79,10 +94,17 @@ a {
   margin-left: 20px;
   display: block;
 }
+.white {
+  background-color: white;
+}
+
 @media (min-width: 800px) {
   .kontinentgrid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 80px;
+  }
+  .space {
     padding: 80px;
   }
 }
