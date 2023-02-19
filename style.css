@@ -27,3 +27,28 @@ img {
 .indexmain {
   background-color: #f3ece1;
 }
+.kontinentmain {
+  background-color: #beddf2;
+}
+
+.logo {
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.kontinentlogo {
+  width: 70px;
+}
+.verden {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+}
+.indexheader {
+  background-color: #f3ece1;
+}
+
+.kontinentheader {
+  background-color: #4ea66f;
+}
