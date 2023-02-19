@@ -24,10 +24,10 @@ img {
   height: auto;
 }
 
-.indexmain {
+.indexbody {
   background-color: #f3ece1;
 }
-.kontinentmain {
+.kontinentbody {
   background-color: #beddf2;
 }
 
@@ -41,7 +41,7 @@ img {
   width: 70px;
 }
 .verden {
-  width: max-content;
+  width: 600px;
   display: flex;
   justify-content: center;
 }
@@ -51,4 +51,38 @@ img {
 
 .kontinentheader {
   background-color: #4ea66f;
+}
+
+h2 {
+  font-family: "maxular", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #093d30;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h3 {
+  font-family: "maxular", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #093d30;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+a {
+  color: #fffedb;
+  font-family: "maxular", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  text-decoration: none;
+  margin-left: 20px;
+  display: block;
+}
+@media (min-width: 800px) {
+  .kontinentgrid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
+  }
 }
