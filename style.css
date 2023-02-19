@@ -98,11 +98,53 @@ h3 {
   background-color: white;
 }
 
+/********* Listeview *********/
+.ikon {
+  width: 50px;
+  margin: 20px;
+}
+.by {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.navn a {
+  text-decoration: none;
+}
+.stedfoto {
+  padding: 20px;
+}
+
+/**** singleview ****/
+dl {
+  font-family: "raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 50px;
+}
+dt {
+  font-family: "raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+dd {
+  font-size: 25px;
+}
+.stedbeskrivelse {
+  margin: 40px;
+  color: #093d30;
+}
+
+/******** media grid **********/
+
 @media (min-width: 800px) {
   .kontinentgrid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 80px;
+  }
+  .stedgrid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .space {
     padding: 80px;
