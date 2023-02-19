@@ -1,0 +1,29 @@
+.color1 {
+  color: #f3ece1;
+}
+.color2 {
+  color: #beddf2;
+}
+.color2 {
+  color: #4ea66f;
+}
+.color2 {
+  color: #fffedb;
+}
+.color2 {
+  color: #093d30;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.indexmain {
+  background-color: #f3ece1;
+}
