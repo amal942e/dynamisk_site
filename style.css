@@ -28,7 +28,7 @@ img {
   background-color: #f3ece1;
 }
 .kontinentbody {
-  background-color: #beddf2;
+  background-color: #4ea66f;
 }
 .singlekontinentbody {
   background-color: #4ea66f;
@@ -37,7 +37,6 @@ img {
 .logo {
   width: 70px;
   margin-left: 20px;
-  
 }
 .kontinentlogo {
   width: 80px;
@@ -45,18 +44,39 @@ img {
 .verden {
   display: flex;
   justify-content: center;
+  transform: translate(0px);
+  transform: scale(0);
+  animation: float 5s ease-in-out infinite;
+  border: 4px #093d30 solid;
+  border-radius: 1100px;
+}
+
+.verden:after {
+  transform: translate(0px);
+  animation: float 4s ease-in-out infinite;
+  z-index: -2;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
 }
 @media (min-width: 800px) {
   .verden {
     display: flex;
     justify-content: center;
-    width: 800px;
+    width: 600px;
+    margin-top: 30px;
   }
 }
 
-.indexheader {
-  background-color: #f3ece1;
-}
 .nav-links-inner a {
   font-family: "maxular", serif;
   font-weight: 700;
@@ -67,19 +87,13 @@ img {
   display: flex;
   justify-content: flex-end;
 }
-.kontinentheader {
-  background-color: #4ea66f;
-}
-.singlekontinentheader {
-  background-color: #beddf2;
-}
 
 h2 {
   font-family: "maxular", serif;
   font-weight: 700;
   font-style: normal;
   color: #093d30;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-right: 20px;
 }
 h3 {
@@ -103,6 +117,13 @@ h3 {
 .white {
   background-color: white;
 }
+.pil {
+  font-size: 45px;
+  margin-left: 40px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #093d30;
+}
 
 /********* Listeview *********/
 .ikon {
@@ -118,6 +139,24 @@ h3 {
 }
 .stedfoto {
   padding: 20px;
+}
+.læsmere {
+  text-decoration: none;
+  color: #4ea66f;
+  font-family: "maxular", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 20px;
+}
+.stifinder a {
+  font-family: "maxular", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 40px;
+  color: #4ea66f;
 }
 
 /**** singleview ****/
@@ -157,9 +196,7 @@ dd {
   }
 }
 
-
 /*************** BURGER MENU*************** - animations */
-
 
 .line {
   transition: transform 0.75s ease, opacity 0.75s ease;
@@ -186,11 +223,10 @@ dd {
 
 @media (max-width: 600px) {
   .nav-links {
-      transform: translate(100%);
-      transition: transform 1s ease;
+    transform: translate(100%);
+    transition: transform 1s ease;
   }
   .body-nav.show .nav-links {
-      
   }
 }
 /*************** BURGER MENU*************** - HEADER */
@@ -210,20 +246,18 @@ dd {
   align-items: center;
   justify-content: space-between;
   background: #beddf2;
-  
 }
 .logo {
   display: flex;
   gap: 20px;
-
 }
 
 @media (min-width: 600px) {
   .nav-links {
-      display: flex;
-      width: 42%;
-      justify-content: space-around;
-      margin-right: 0px;
+    display: flex;
+    width: 42%;
+    justify-content: space-around;
+    margin-right: 0px;
   }
 }
 .burger {
@@ -239,12 +273,12 @@ dd {
 }
 @media (max-width: 800px) {
   .body-nav {
-      height: 4rem;
-      top: 0;
-      left: 0;
-      left: -22px;
-      width: 106%;
-    }
+    height: 4rem;
+    top: 0;
+    left: 0;
+    left: -22px;
+    width: 106%;
+  }
   .nav-links {
     width: 62%;
   }
@@ -255,31 +289,31 @@ dd {
 /************** BURGER MENU ***************/
 @media (max-width: 600px) {
   .body-nav {
-      position: fixed;
+    position: fixed;
   }
   .burger {
-      display: grid;
+    display: grid;
   }
 
   .nav-links {
-      display: flex;
-      position: fixed;
-      top: 64px;
-      right: 0;
-      height: 92vh;
-      width: 100%;
-      flex-direction: column;
-      background-color: #84a7d9;
-      gap: 20px;
-      border-radius: 10px;
+    display: flex;
+    position: fixed;
+    top: 64px;
+    right: 0;
+    height: 92vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #84a7d9;
+    gap: 20px;
+    border-radius: 10px;
   }
   .nav-links li {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
   }
   .nav-links li a {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 }
