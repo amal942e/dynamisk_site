@@ -36,22 +36,28 @@ img {
 
 .logo {
   width: 70px;
-  margin-top: 20px;
   margin-left: 20px;
-  margin-right: 20px;
+  
 }
 .kontinentlogo {
   width: 80px;
 }
 .verden {
-  width: 600px;
   display: flex;
   justify-content: center;
 }
+@media (min-width: 800px) {
+  .verden {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+  }
+}
+
 .indexheader {
   background-color: #f3ece1;
 }
-.headerlink a {
+.nav-links-inner a {
   font-family: "maxular", serif;
   font-weight: 700;
   font-style: normal;
@@ -148,5 +154,132 @@ dd {
   }
   .space {
     padding: 80px;
+  }
+}
+
+
+/*************** BURGER MENU*************** - animations */
+
+
+.line {
+  transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+/* when the class "body-nav" has .shown in it change each line like this*/
+.body-nav.show .line1 {
+  transform: translate(-11px) rotate(45deg) translate(14px);
+}
+.body-nav.show .line2 {
+  opacity: 0;
+}
+.body-nav.show .line3 {
+  transform: translate(-11px) rotate(-45deg) translate(14px);
+}
+/* makes sure that the nav-links comes out*/
+.body-nav.show .nav-links {
+  transform: translate(0);
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+      transform: translate(100%);
+      transition: transform 1s ease;
+  }
+  .body-nav.show .nav-links {
+      
+  }
+}
+/*************** BURGER MENU*************** - HEADER */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.body-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #beddf2;
+  
+}
+.logo {
+  display: flex;
+  gap: 20px;
+
+}
+
+@media (min-width: 600px) {
+  .nav-links {
+      display: flex;
+      width: 42%;
+      justify-content: space-around;
+      margin-right: 0px;
+  }
+}
+.burger {
+  display: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.line {
+  height: 2px;
+  width: 35px;
+  margin: 0.25rem 0;
+  background: #000000;
+}
+@media (max-width: 800px) {
+  .body-nav {
+      height: 4rem;
+      top: 0;
+      left: 0;
+      left: -22px;
+      width: 106%;
+    }
+  .nav-links {
+    width: 62%;
+  }
+  main {
+    padding-top: 90px;
+  }
+}
+/************** BURGER MENU ***************/
+@media (max-width: 600px) {
+  .body-nav {
+      position: fixed;
+  }
+  .burger {
+      display: grid;
+  }
+
+  .nav-links {
+      display: flex;
+      position: fixed;
+      top: 64px;
+      right: 0;
+      height: 92vh;
+      width: 100%;
+      flex-direction: column;
+      background-color: #84a7d9;
+      gap: 20px;
+      border-radius: 10px;
+  }
+  .nav-links li {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #000;
+  }
+  .nav-links li a {
+      display: flex;
+      justify-content: center;
   }
 }
