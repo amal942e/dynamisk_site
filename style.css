@@ -1,0 +1,152 @@
+.color1 {
+  color: #f3ece1;
+}
+.color2 {
+  color: #beddf2;
+}
+.color2 {
+  color: #4ea66f;
+}
+.color2 {
+  color: #fffedb;
+}
+.color2 {
+  color: #093d30;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.indexbody {
+  background-color: #f3ece1;
+}
+.kontinentbody {
+  background-color: #beddf2;
+}
+.singlekontinentbody {
+  background-color: #4ea66f;
+}
+
+.logo {
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.kontinentlogo {
+  width: 80px;
+}
+.verden {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+.indexheader {
+  background-color: #f3ece1;
+}
+.headerlink a {
+  font-family: "maxular", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 20px;
+  color: #093d30;
+  display: flex;
+  justify-content: flex-end;
+}
+.kontinentheader {
+  background-color: #4ea66f;
+}
+.singlekontinentheader {
+  background-color: #beddf2;
+}
+
+h2 {
+  font-family: "maxular", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #093d30;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h3 {
+  font-family: "maxular", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #093d30;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.category-list a {
+  color: #fffedb;
+  font-family: "maxular", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  text-decoration: none;
+  margin-left: 20px;
+  display: block;
+}
+.white {
+  background-color: white;
+}
+
+/********* Listeview *********/
+.ikon {
+  width: 50px;
+  margin: 20px;
+}
+.by {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.navn a {
+  text-decoration: none;
+}
+.stedfoto {
+  padding: 20px;
+}
+
+/**** singleview ****/
+dl {
+  font-family: "raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 50px;
+}
+dt {
+  font-family: "raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+dd {
+  font-size: 25px;
+}
+.stedbeskrivelse {
+  margin: 40px;
+  color: #093d30;
+}
+
+/******** media grid **********/
+
+@media (min-width: 800px) {
+  .kontinentgrid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
+  }
+  .stedgrid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .space {
+    padding: 80px;
+  }
+}
