@@ -93,7 +93,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   color: #093d30;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-right: 20px;
 }
 h3 {
@@ -103,6 +103,7 @@ h3 {
   color: #093d30;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 15px;
 }
 .category-list a {
   color: #fffedb;

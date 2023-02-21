@@ -15,7 +15,7 @@ function hentData(url) {
 }
 function vis(element) {
   document.querySelector(".navn").textContent = element.titel;
-  document.querySelector(".by").textContent = element.by;
+  document.querySelector(".bynavn").textContent = element.by;
   document.querySelector(".land").textContent = element.land;
 }
 
