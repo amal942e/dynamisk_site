@@ -129,7 +129,7 @@ h3 {
 /********* Listeview *********/
 .ikon {
   width: 50px;
-  margin: 20px;
+  margin-left: 20px;
 }
 .by {
   margin-top: 20px;
@@ -149,12 +149,13 @@ h3 {
   font-style: normal;
   margin-left: 20px;
 }
+
 .stifinder a {
   font-family: "maxular", sans-serif;
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
   margin-top: 10px;
   margin-left: 40px;
   color: #4ea66f;
