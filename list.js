@@ -26,7 +26,7 @@ function vis(json) {
   json.forEach((by) => {
     const klon = template.cloneNode(true);
     klon.querySelector(".stedfoto").src = "billeder/" + by.image;
-    klon.querySelector(".ikon").src = "grafik/" + by.Icon;
+    klon.querySelector(".ikon").src = "grafik/" + by.icon;
     klon.querySelector(".navn").textContent = by.titel;
     klon.querySelector("a").href += by._id;
     main.appendChild(klon);

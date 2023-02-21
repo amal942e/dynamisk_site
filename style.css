@@ -203,6 +203,7 @@ dt {
 }
 dd {
   font-size: 25px;
+  margin-bottom: 20px;
 }
 .stedbeskrivelse {
   margin: 40px;
