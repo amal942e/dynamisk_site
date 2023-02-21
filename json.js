@@ -871,7 +871,7 @@ const json = [
     rating: 5,
     type: "Sportsligt",
     image: ["63f49844aa860750000690af"],
-    titel: "Svømmeundervisning fo rde lokale Masaier",
+    titel: "Svømmeundervisning for de lokale Masaier",
     Icon: ["63ef7291aa860750000614ed"],
     temperatur: 26,
   },
