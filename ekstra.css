@@ -1,155 +1,151 @@
 /* BURGER MENU - animations*/
 
-
 .line {
-    transition: transform 0.75s ease, opacity 0.75s ease;
+  transition: transform 0.75s ease, opacity 0.75s ease;
 }
 
 /* when the class "body-nav" has .shown in it change each line like this*/
 .body-nav.show .line1 {
-    transform: translate(-11px) rotate(45deg) translate(14px);
-  }
+  transform: translate(-11px) rotate(45deg) translate(14px);
+}
 .body-nav.show .line2 {
-    opacity: 0;
-  }
+  opacity: 0;
+}
 .body-nav.show .line3 {
-    transform: translate(-11px) rotate(-45deg) translate(14px);
-  }
+  transform: translate(-11px) rotate(-45deg) translate(14px);
+}
 /* makes sure that the nav-links comes out*/
 .body-nav.show .nav-links {
-    transform: translate(0);
+  transform: translate(0);
 }
 
 /* Create a sticky header */
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 102px;
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-@media (max-width: 600px) {
-    .nav-links {
-        transform: translate(100%);
-        transition: transform 1s ease;
-    }
-    .body-nav.show .nav-links {
+.sticky + .content {
+  padding-top: 102px;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    transform: translate(100%);
+    transition: transform 1s ease;
+  }
+  /* .body-nav.show .nav-links {
         
-    }
+    } */
 }
 
 /****  HEADER  ****/
 
-
 /* Create a sticky header */
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 102px;
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
 
 .body-nav {
-    display: flex;
-    height: 6rem;
-    align-items: center;
-    justify-content: space-between;
-    color: #ffffff;
-    background: white;
-    
-  }
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  background: white;
+}
 .logo {
-    display: flex;
-    gap: 20px;
-    padding-left: 2rem;
+  display: flex;
+  gap: 20px;
+  padding-left: 2rem;
 }
 #logo-img {
-    width: 21%;
+  width: 21%;
 }
 
 .nav-links-inner {
-    display: flex;
-    align-items: center;
-    padding: 5%;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  gap: 20px;
 }
 .icon {
-    width: 14%;
+  width: 14%;
 }
 /* setting a limit to desktop only, because i dont want justify-content on nav-links mobile */
-@media (min-width: 600px) {
-    .nav-links {
-        display: flex;
-        width: 42%;
-        justify-content: space-around;
-    }
-    main h1 {
-        padding-top: 25px;
-    }
+@media (min-width: 800px) {
+  .nav-links {
+    display: flex;
+    width: 42%;
+    justify-content: space-around;
+  }
+  main h1 {
+    padding-top: 25px;
+  }
 }
 /* this bruger div contains the 3 lines*/
 .burger {
-    display: none;
-    padding: 0.5rem;
-    cursor: pointer;
+  display: none;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 /* every line contains this class, so transition will set a timer for its animation*/
 .line {
-    height: 2px;
-    width: 35px;
-    margin: 0.25rem 0;
-    background: #000000;
+  height: 2px;
+  width: 35px;
+  margin: 0.25rem 0;
+  background: #000000;
 }
 /* more width = more room for the nav links bar, so it dosnt overflow out the page */
 @media (max-width: 800px) {
-    .body-nav {
-        height: 4rem;
-        top: 0;
-        left: 0;
-        left: -22px;
-        width: 106%;
-      }
-    .nav-links {
-      width: 62%;
-    }
-    
+  .body-nav {
+    height: 4rem;
+    top: 0;
+    left: 0;
+    left: -22px;
+    width: 106%;
+  }
+  .nav-links {
+    width: 62%;
+  }
 }
-  
+
 /**** BURGER MENU ****/
 
-@media (max-width: 600px) {
-    .body-nav {
-        position: fixed;
-    }
-    .burger {
-        display: grid;
-    }
+@media (max-width: 800px) {
+  .body-nav {
+    position: fixed;
+  }
+  .burger {
+    display: grid;
+  }
 
-    .nav-links {
-        display: flex;
-        position: fixed;
-        top: 64px;
-        right: 0;
-        height: 92vh;
-        width: 100%;
-        flex-direction: column;
-        background-color: #84a7d9;
-        gap: 20px;
-        border-radius: 10px;
-    }
-    .nav-links li {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #000;
-    }
-    .nav-links li a {
-        display: flex;
-        justify-content: center;
-    }
+  .nav-links {
+    display: flex;
+    position: fixed;
+    top: 64px;
+    right: 0;
+    height: 92vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #84a7d9;
+    gap: 20px;
+    border-radius: 10px;
+  }
+  .nav-links li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+  }
+  .nav-links li a {
+    display: flex;
+    justify-content: center;
+  }
 }

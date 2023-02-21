@@ -91,6 +91,18 @@ img {
   color: #093d30;
   display: flex;
   justify-content: flex-end;
+  text-transform: uppercase;
+}
+.nav-links-inner a:hover {
+  font-family: "maxular", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fffedb;
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -131,17 +143,6 @@ h3 {
   text-decoration: none;
   margin-left: 20px;
   display: block;
-}
-
-.nav-links-inner a:hover {
-  font-family: "maxular", serif;
-  font-weight: 700;
-  font-style: normal;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fffedb;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .white {
