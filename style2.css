@@ -4,9 +4,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
-}
-
-.stifinder {
-  background-color: #fffedb;
-  padding: 20px;
+  .stifinder {
+    background-color: #fffedb;
+    padding: 20px;
+    display: flex;
+  }
 }
