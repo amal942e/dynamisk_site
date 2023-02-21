@@ -41,6 +41,11 @@ img {
 .kontinentlogo {
   width: 80px;
 }
+
+.kontinenter:hover {
+  color: #fffedb;
+}
+
 .verden {
   display: flex;
   justify-content: center;
@@ -104,17 +109,41 @@ h3 {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 15px;
+  margin-bottom: 50px;
 }
 .category-list a {
   color: #fffedb;
   font-family: "maxular", serif;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: 500;
+  font-style: bold;
   font-size: 50px;
   text-decoration: none;
   margin-left: 20px;
   display: block;
 }
+
+.category-list a:hover {
+  color: #093d30;
+  font-family: "maxular", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 55px;
+  text-decoration: none;
+  margin-left: 20px;
+  display: block;
+}
+
+.nav-links-inner a:hover {
+  font-family: "maxular", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fffedb;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .white {
   background-color: white;
 }
