@@ -1,4 +1,12 @@
-const url = `https://rejsegalleri-07a8.restdb.io/rest/kontinenter?q={%22by%22:%22Paris%22}`;
+const urlParams = new URLSearchParams(window.location.search);
+const by = urlParams.get("by");
+
+const main = document.querySelector("main");
+const template = document.querySelector("template").content;
+document.querySelector("h2").textContent = by;
+
+const url = `https://rejsegalleri-07a8.restdb.io/rest/kontinenter?q={"by":"${by}"}`;
+console.log(url);
 const medieurl = "https://rejsegalleri-07a8.restdb.io/image/";
 const ikonurl = "https://rejsegalleri-07a8.restdb.io/icon/";
 const options = {
@@ -12,9 +20,6 @@ async function hentData() {
   const json = await responses.json();
   vis(json);
 }
-
-const main = document.querySelector("main");
-const template = document.querySelector("template").content;
 
 function vis(json) {
   console.log(json);
