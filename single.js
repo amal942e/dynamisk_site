@@ -17,6 +17,10 @@ function vis(element) {
   document.querySelector(".navn").textContent = element.titel;
   document.querySelector(".bynavn").textContent = element.by;
   document.querySelector(".land").textContent = element.land;
+  document.querySelector(".stedfoto").src = "billeder/" + element.image;
+  document.querySelector(".temperatur").textContent = element.temperatur;
+  document.querySelector(".rating").textContent = element.rating;
+  document.querySelector(".type").textContent = element.type;
 }
 
 hentData(url);
