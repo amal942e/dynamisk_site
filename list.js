@@ -20,15 +20,15 @@ async function hentData() {
   const json = await responses.json();
   vis(json);
 }
-
+console.log(by.icon);
 function vis(json) {
   console.log(json);
   json.forEach((by) => {
     const klon = template.cloneNode(true);
     klon.querySelector(".stedfoto").src = medieurl;
-    klon.querySelector(".ikon").src = ikonurl;
+    klon.querySelector(".ikon").src = "grafik/" + by.Icon;
     klon.querySelector(".navn").textContent = by.titel;
     main.appendChild(klon);
   });
-}
+} 
 hentData();
