@@ -25,10 +25,11 @@ function vis(json) {
   console.log(json);
   json.forEach((by) => {
     const klon = template.cloneNode(true);
-    klon.querySelector(".stedfoto").src = medieurl;
+    klon.querySelector(".stedfoto").src = "billeder/" + by.image;
     klon.querySelector(".ikon").src = "grafik/" + by.Icon;
     klon.querySelector(".navn").textContent = by.titel;
+    klon.querySelector("a").href += by._id;
     main.appendChild(klon);
   });
-} 
+}
 hentData();
