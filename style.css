@@ -337,8 +337,6 @@ input {
     transform: translate(100%);
     transition: transform 1s ease;
   }
-  .body-nav.show .nav-links {
-  }
 }
 /*************** BURGER MENU*************** - HEADER */
 
@@ -366,7 +364,7 @@ input {
 @media (min-width: 600px) {
   .nav-links {
     display: flex;
-    width: 42%;
+    width: 20%;
     justify-content: space-around;
     margin-right: 0px;
   }
