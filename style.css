@@ -23,7 +23,9 @@ img {
   width: 100%;
   height: auto;
 }
-
+main {
+  margin-bottom: 30px;
+}
 .indexbody {
   background-color: #f3ece1;
 }
@@ -123,11 +125,12 @@ h3 {
   margin-top: 15px;
   margin-bottom: 50px;
 }
+
 .category-list a {
   color: #fffedb;
   font-family: "maxular", serif;
   font-weight: 500;
-  font-style: bold;
+
   font-size: 50px;
   text-decoration: none;
   margin-left: 20px;
@@ -147,7 +150,17 @@ h3 {
 
 .white {
   background-color: white;
+  padding-bottom: 30px;
 }
+h5 {
+  font-family: "maxular", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #093d30;
+  margin-left: 95px;
+  font-size: 18px;
+}
+
 .pil {
   font-size: 45px;
   margin-left: 40px;
@@ -227,6 +240,71 @@ dd {
   .space {
     padding: 80px;
   }
+  .productlistmain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .stifinder {
+    background-color: #fffedb;
+    padding: 20px;
+    display: flex;
+  }
+}
+/************ Footer + form *************/
+
+footer {
+  background-color: #fffedb;
+  padding: 10px;
+}
+h1 {
+  color: #093d30;
+  font-family: "maxular", serif;
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 30px;
+}
+p {
+  font-family: "maxular", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #093d30;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+form {
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 1.5rem;
+  display: grid;
+  max-width: 350px;
+  margin-top: 1rem;
+}
+label,
+input,
+textarea,
+select,
+button {
+  display: block;
+  border-radius: 5px;
+  border: 1px;
+  font-family: "raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #093d30;
+}
+.form-felt {
+  display: grid;
+  gap: 3px;
+}
+button {
+  padding: 3px;
+  background-color: #beddf2;
+  color: #093d30;
+}
+input {
+  padding: 5px;
 }
 
 /*************** BURGER MENU*************** - animations */
