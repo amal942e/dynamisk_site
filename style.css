@@ -277,7 +277,7 @@ dd {
 
 footer {
   background-color: #fffedb;
-  padding: 10px;
+  padding: 3px;
 }
 h1 {
   color: #093d30;
@@ -302,6 +302,7 @@ form {
   display: grid;
   max-width: 350px;
   margin-top: 1rem;
+  background: #f3f2c6;
 }
 label,
 input,
@@ -327,6 +328,19 @@ button {
 }
 input {
   padding: 5px;
+}
+
+@media (min-width: 601px) {
+  .formular_section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.formular_section {
+  display: grid;
+  gap: 3rem;
+  align-items: start;
+  margin: 2rem;
 }
 
 /*************** BURGER MENU*************** - animations */
