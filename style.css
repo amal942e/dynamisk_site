@@ -395,6 +395,7 @@ input {
   display: none;
   padding: 0.5rem;
   cursor: pointer;
+  margin-right: 10px;
 }
 .line {
   height: 2px;
