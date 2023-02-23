@@ -116,7 +116,9 @@ h5 {
   font-weight: 400;
   font-style: normal;
   color: #093d30;
-  margin-left: 95px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
   font-size: 18px;
 }
 
@@ -149,7 +151,7 @@ h5 {
 
 .pil {
   font-size: 45px;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 20px;
   text-decoration: none;
   color: #093d30;
@@ -227,6 +229,9 @@ dd {
   .space {
     padding: 80px;
   }
+  .space2 {
+    padding-left: 80px;
+  }
   .productlistmain {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -236,6 +241,12 @@ dd {
     background-color: #fffedb;
     padding: 20px;
     display: flex;
+  }
+  h5 {
+    margin-left: 95px;
+  }
+  .pil {
+    margin-left: 40px;
   }
 }
 /************ Footer + form *************/
@@ -286,7 +297,7 @@ button {
   gap: 3px;
 }
 button {
-  padding: 3px;
+  padding: 10px;
   background-color: #beddf2;
   color: #093d30;
 }
