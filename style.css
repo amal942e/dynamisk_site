@@ -9,6 +9,8 @@ img {
 }
 main {
   margin-bottom: 30px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 /********* Baggrundsfarver *********/
 .indexbody {
@@ -47,18 +49,6 @@ main {
   z-index: -2;
 }
 
-@keyframes float {
-  0% {
-    transform: translate(0px);
-  }
-  50% {
-    transform: translate(100px);
-  }
-  100% {
-    transform: translate(0px);
-  }
-}
-
 @keyframes pulse {
   0% {
     transform: scale(0.9, 0.9);
@@ -71,11 +61,7 @@ main {
   }
 }
 
-#info_knap {
-  animation: pulse2_kf 2s infinite;
-}
-
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   .verden {
     display: flex;
     justify-content: center;
@@ -85,26 +71,29 @@ main {
 }
 
 .nav-links-inner a {
-  font-family: "maxular", serif;
+  font-family: "raleway", sans-serif;
   font-weight: 700;
   font-style: normal;
+  text-transform: uppercase;
+
   text-decoration: none;
   font-size: 20px;
   color: #093d30;
   display: flex;
   justify-content: flex-end;
-  text-transform: uppercase;
+  padding: 30px;
+  margin-right: 40%;
 }
 .nav-links-inner a:hover {
-  font-family: "maxular", serif;
+  font-family: "raleway", sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
   font-style: normal;
   text-decoration: none;
   font-size: 20px;
   color: #fffedb;
   display: flex;
   justify-content: flex-end;
-  text-transform: uppercase;
 }
 
 /********* Skrift *********/
@@ -116,6 +105,7 @@ h2 {
   color: #093d30;
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 2rem;
 }
 h3 {
   font-family: "maxular", serif;
@@ -232,11 +222,11 @@ dd {
 
 /******** media grid **********/
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   .kontinentgrid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 80px;
+    margin: 10%;
   }
   .stedgrid_1-1 {
     display: grid;
@@ -271,6 +261,7 @@ dd {
   .by {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 12%;
   }
 }
 /************ Footer + form *************/
@@ -409,7 +400,7 @@ input {
   display: none;
   padding: 0.5rem;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 12%;
 }
 .line {
   height: 2px;
@@ -417,7 +408,7 @@ input {
   margin: 0.25rem 0;
   background: #000000;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .body-nav {
     height: 4rem;
     top: 0;
@@ -429,7 +420,7 @@ input {
     width: 62%;
   }
   main {
-    padding-top: 90px;
+    padding-top: 10%;
   }
 }
 /************** BURGER MENU ***************/
